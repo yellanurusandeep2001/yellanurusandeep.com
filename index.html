@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sandeep Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9911a162cb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="IMG/logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#Courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>FULL STACK Web Developer</p>
+                    <h1>Hello, I'm <span>Sandeep</span><br>Yellanuru From India</h1>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------ ABOUT ME------------------------------------------------------------------------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="IMG/user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I'm Sandeep from Tadipatri,Andhra Pradesh.
+                            I am a Recent graduate with a Bachelor's degree in Computer Science.
+                            Got a First Class Degree from Presidency University in Bangalore. 
+                            Have a Knowledge in programming languages such as Python and JavaScript, coupled with a passion for problem-solving. 
+                            Completed the cources of Machine Learning and Cyber Security.
+                            Eager to contribute my technical skills and enthusiasm for learning in an entry-level software development role.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="Skills">
+                                <ul>
+                                    <li><span>Full Stack Web development</span><br>Designing Web Interfaces</li>
+                                    <li><span>Machine Learning</span><br>Visualising the Contents</li>
+                                    <li><span>Cyber Security</span><br>Penetration Testing & Vunerability Testing</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Certification">
+                                <ul>
+                                    <li><span>Linux Foundation</span><br>Cyber Security Essentials</li>
+                                    <li><span>Accenture</span><br>Data Analytics and Visualization Virtual Experience</li>
+                                    <li><span>Goldman Sachs</span><br>Software Engineer Virtual Experience</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>2023</span><br>Computer Engineering at Presidency University</li>
+                                    <li><span>2019</span><br>Intermediate Education at Sri Chaitanya Institutes</li>
+                                    <li><span>2017</span><br>Secondary Education at Indus International High School</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------PROJECTS--------------------------------------------------------------->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Water Quality Prediction Using ML</h2>
+                        <p>This project deals about the to forecast and monitor the
+                            quality of water sources for proactive management and
+                            ensuring the safety of communities</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h2>Resume Creation Using HTML & CSS</h2>
+                        <p> Use HTML for a well-organized layout, and CSS for visual styling, ensuring a clear and structured presentation for resume 
+                            content. </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Portfolio Website</h2>
+                        <p> Elegant portfolio website showcasing my creative work and expertise, designed to leave a lasting impression on potential clients and employers.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------------Courses------------------------------------------------------------------->
+        <div id="Courses">
+            <div class="container">
+                <h1 class="sub-title">My Courses</h1>
+                <div class="course-list">
+                    <div class="course">
+                        <img src="IMG/C-1.jpg">
+                        <div class="layer">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <p>Full Stack Web Development is used for creation of websites in both frontend and back end</p>
+                            <br>
+                            <p>Course comes up with HTML,CSS,JavaScript,ReactJS,NodeJS..</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <img src="IMG/c-2.jpg">
+                        <div class="layer">
+                            <h3>PYTHON & MACHINE LEARNING</h3>
+                            <p>Versatile, high-level programming language known for its simplicity, readability, and extensive libraries, powering web development, data analysis, and more.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <img src="IMG/C-3.jpg">
+                        <div class="layer">
+                            <h3>CYBER SECURITY</h3>
+                            <p>Comprehensive cybersecurity measures to safeguard digital assets and data against evolving threats, ensuring confidentiality and integrity.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!---------------------------------------------CONTACT------------------------------------------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>sandysandeep8064@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9704761417</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100009214228905"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/_deadly_soul._/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/9704761417"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <a href="IMG/my-CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------COPYRIGHT-------------------------------------------------------------------------------->
+            <div class="copyright">
+                <p>copyright © Sandeep made with <i class="fa-solid fa-heart"></i> Visual Studio Code </p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <form name="submit-to-google-sheet">
+          </form>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxZmfksiu-_jp_R0K_7oIEP-lScS5azTZ8IC7ge3ZJxdnRn1N1tX4g1ugLwoflmg2FA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
